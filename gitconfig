@@ -1,0 +1,12 @@
+[filter "private"]
+	smudge = dc_crypt decipher
+	clean = dc_crypt encipher
+[diff "private"]
+	textconv = dc_crypt diff
+[user]
+	email = matt.jarvis@datacentred.co.uk
+	name = Matt Jarvis
+[gitreview]
+	username = dc_mattj
+[core]
+	editor = vim
