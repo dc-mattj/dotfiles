@@ -1,14 +1,22 @@
+call plug#begin('~/.vim/plugged')
+Plug 'godlygeek/tabular'
+Plug 'scrooloose/syntastic'
+Plug 'rodjek/vim-puppet'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+call plug#end()
 set tabstop=4
 set shiftwidth=4
 set expandtab
-call pathogen#infect()
 syntax on
 filetype plugin indent on
 " Statusline stuff
 " Using vim-airline - https://github.com/bling/vim-airline
 set laststatus=2
 let g:airline_theme='powerlineish'
-let g:airline_powerline_fonts=1
+"let g:airline_powerline_fonts=1
 " let g:airline_left_sep = ''
 " let g:airline_right_sep = ''
 " let g:airline_branch_prefix = '⭠'
@@ -25,3 +33,4 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
